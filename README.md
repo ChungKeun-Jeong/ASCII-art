@@ -1,5 +1,7 @@
 # ASCII-art
+텍스트를 조합해서 그림 만들기
 
+<br><br>
 ![image](https://user-images.githubusercontent.com/107621795/194558360-1e79efe3-f3f8-4bf7-8a29-c2583d5ac83b.png)
 <br/>
 * 초기 화면<br/>1. GRAY or COLOR 선택<br/>2. 텍스트 크기 입력<br/>3. 이미지 열기<br/><br/><br/>
