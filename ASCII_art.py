@@ -36,21 +36,17 @@ def gray() :
     # 텍스트 이미지 중에서 같은 평균 값을 가진 것끼리 묶는다.
     for i in range (len(text_imgs)) :
         diffValue_img[int(np.mean(text_imgs[i]))].append(text_imgs[i])    
-        
-    #print(len(diffValue_img))
-    
-    
+            
     for i in range(0, rows, size) :  # 세로 한 칸씩 증가
         for j in range(0, cols, size) :  # 가로 한 칸씩 증가
             
             # 새로 만든 픽셀의 평균 값 구하기 1 - 이게 더 빨리 실행됨
-            #"""
             pixel_sum = 0
             for k in range(i, i + size) :  # 세로 한 픽셀씩 증가
                 for l in range(j, j + size) :  # 가로 한 픽셀씩 증가
                     pixel_sum += gray_img[i, j]      
             pixel_avg = pixel_sum / (size * size)
-            #"""
+
             
             # 새로 만든 픽셀의 평균 값 구하기 2
             """
